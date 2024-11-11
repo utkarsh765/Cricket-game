@@ -1,0 +1,45 @@
+body{
+    text-align:center;
+}
+.choice-button-1,.choice-button-2,.choice-button-3{
+    border:none;
+    height:150px;
+    width:150px;
+    margin:10px;
+    background-color:rgb(175, 240, 175);
+    border-radius:50%;
+    cursor:pointer;
+    transition:0.2s;
+}
+.choice-button-1:hover{
+    background-color:lightgreen;
+    height:155px;
+    width:155px;
+}
+.choice-button-2:hover{
+    background-color:lightgreen;
+    height:155px;
+    width:155px;
+}
+.choice-button-3:hover{
+    background-color:lightgreen;
+    height:155px;
+    width:155px;
+}
+.choice-image{
+    height:75px;
+}
+#reset{
+    border:none;
+    background-color:rgb(175, 240, 175);
+    cursor:pointer;
+    height:50px;
+    width:50px;
+    border-radius:25px;
+    transition:0.2s;
+}
+#reset:hover{
+    background-color:lightgreen;
+    height:52px;
+    width:52px;
+}

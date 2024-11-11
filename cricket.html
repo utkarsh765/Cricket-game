@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket game</title>
+    <link rel="stylesheet" href="cricket.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Bat Ball Stump Game</h1>
+    <!-- code for bat -->
+    <button class="choice-button-1" onclick="
+    let computerChoice=generateComputerChoice();
+    let finalResult=getResult(computerChoice,'bat');    
+    showResult(computerChoice,'bat',finalResult);
+    "><img src="bat.png" alt="bat-image" class="choice-image"></button>
+
+
+    <!-- code for ball-->
+    <button class="choice-button-2" onclick="
+    computerChoice=generateComputerChoice();
+    finalResult=getResult(computerChoice,'ball');
+    showResult(computerChoice,'ball',finalResult);
+    "><img src="ball.png" alt="ball-image" class="choice-image"></button>
+
+
+    <!-- code for stumps-->
+    <button class="choice-button-3" onclick="
+    computerChoice=generateComputerChoice();
+    finalResult=getResult(computerChoice,'stumps');
+    showResult(computerChoice,'stumps',finalResult);
+    "><img src="stump.png" alt="stump-image" class="choice-image"></button>
+    
+    <h3 id="user-choice"></h3>
+    <h3 id="computer-choice"></h3>
+    <h3 id="result"></h3>
+    <h3 id="score"></h3>
+
+    <button id="reset" onclick="localStorage.clear()
+    count={
+        win:0,
+        lost:0,
+        tie:0,
+    }
+    showResult();
+    "><i class="fa-solid fa-arrows-rotate"></i></button>
+
+<script src="cricket.js"></script>
+</body>
+</html>
